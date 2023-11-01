@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(
     express.urlencoded({
         extended: true,
-    }),
+    })
 );
 app.use(express.json());
 
@@ -35,7 +35,7 @@ app.engine(
         helpers: {
             sum: (a, b) => a + b,
         },
-    }),
+    })
 );
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources', 'views'));
